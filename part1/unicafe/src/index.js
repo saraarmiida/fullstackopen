@@ -29,6 +29,10 @@ const Positive = ({good, sum}) => {
   )
 }
 
+const Statistic = (props) => (
+  <p>{props.text} {props.value}</p>
+)
+
 const Statistics = ({good, neutral, bad}) => {
   const sum = good + neutral + bad
 
@@ -44,10 +48,10 @@ const Statistics = ({good, neutral, bad}) => {
   return (
     <div>
         <Header text='statistics' />
-        <p>good {good}</p>
-        <p>neutral {neutral}</p>
-        <p>bad {bad}</p>
-        <p>all {sum}</p>
+        <Statistic text='good' value={good}/>
+        <Statistic text='neutral' value={neutral}/>
+        <Statistic text='bad' value={bad}/>
+        <Statistic text='all' value={sum}/>
         <Average text='average' good={good} neutral={neutral} bad={bad} />
         <Positive good={good} sum={sum} />
   </div>
