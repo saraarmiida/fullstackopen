@@ -29,16 +29,27 @@ const Positive = ({good, sum}) => {
   )
 }
 
-const Statistics = ({good, bad, neutral}) => {
+const Statistics = ({good, neutral, bad}) => {
+  const sum = good + neutral + bad
+
+  if (!sum) {
+    return (
+      <div>
+        <Header text='statistics' />
+        <p>No feedback given</p>
+      </div>
+    )
+  }
+
   return (
     <div>
         <Header text='statistics' />
         <p>good {good}</p>
         <p>neutral {neutral}</p>
         <p>bad {bad}</p>
-        <p>all {bad + neutral + good}</p>
+        <p>all {sum}</p>
         <Average text='average' good={good} neutral={neutral} bad={bad} />
-        <Positive good={good} sum={good + neutral + bad} />
+        <Positive good={good} sum={sum} />
   </div>
   )
 }
