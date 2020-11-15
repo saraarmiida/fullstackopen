@@ -2,18 +2,8 @@
   "persons": [
     {
       "name": "Arto Hellas",
-      "number": "040-123456",
+      "number": "1234556",
       "id": 1
-    },
-    {
-      "name": "Ada Lovelace",
-      "number": "39-44-5323523",
-      "id": 2
-    },
-    {
-      "name": "Dan Abramov",
-      "number": "12-43-234345",
-      "id": 3
     },
     {
       "name": "Mary Poppendieck",
@@ -26,9 +16,14 @@
       "id": 5
     },
     {
-      "name": "lalla",
-      "number": "843798",
-      "id": 6
+      "name": "Artturi kelake",
+      "number": "1234",
+      "id": 8
+    },
+    {
+      "name": "djksdkj",
+      "number": "3472983",
+      "id": 9
     }
   ]
 }
