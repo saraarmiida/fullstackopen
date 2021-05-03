@@ -70,6 +70,14 @@ const App = () => {
 					}, 3000)
 					setPersons(persons.concat(returnedPerson))
 				})
+				.catch(error => {
+					setNotificationMsg(`Validation error`)
+					setNotificationType('error')
+					setTimeout(() => {
+						setNotificationMsg(null)
+						setNotificationType(null)
+					}, 3000)
+				})
 		}
 		setNewName('')
 		setNewNumber('')
