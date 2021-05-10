@@ -2,7 +2,7 @@ POST http://localhost:3003/api/blogs
 content-type: application/json
 
 {
-	"title": "Aamukahvilla",
+	"title": "Spring feels",
 	"author": "Henriikka Reinman",
 	"url": "https://aamukahvilla.fi/",
 	"likes": 3
