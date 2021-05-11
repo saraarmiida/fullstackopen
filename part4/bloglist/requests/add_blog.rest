@@ -1,8 +1,9 @@
 POST http://localhost:3003/api/blogs
 content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNwZW50dGkiLCJpZCI6IjYwOTNjNDI5OWJmNzdiODE5MTA0YTU2ZCIsImlhdCI6MTYyMDcyMjEwOH0.n2a1F_6WbdRFV56oy0YiG51wYWoTUBZT4P1ta8Wa-98
 
 {
-	"title": "Spring feels",
+	"title": "Summer feels",
 	"author": "Henriikka Reinman",
 	"url": "https://aamukahvilla.fi/",
 	"likes": 3
